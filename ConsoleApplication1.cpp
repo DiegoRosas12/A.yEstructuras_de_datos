@@ -1,12 +1,19 @@
-// ConsoleApplication1.cpp: define el punto de entrada de la aplicaci�n de consola.
+/// ConsoleApplication1.cpp: define el punto de entrada de la aplicación de consola.
 //
 
-
+#include "stdafx.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
 
 #define B0 1
+#define B1 2
+#define B2 4
+#define B3 8
+#define B4 16
+#define B5 32
+#define B6 64
+#define B7 -128
 
 typedef struct lt
 {
@@ -124,6 +131,20 @@ lt* ordenar5(int *x, int m, int max, int min, int **h, lt* lt1)
 			if(lt2->s!=NULL)
 				lt2->s->a = lt2;
 		}
+		if (!(B0&f))
+		{
+			while (lt1->x != x[-1])
+				lt1 = lt1->a;
+			lt3 = lt1;
+			if (lt1->s != NULL)
+				lt1->s->a = lt1->a;
+			if (lt1->a != NULL)
+				lt1->a->s = lt1->s;
+			lt1 = lt1->s != NULL ? lt1->s : lt1->a;
+			free(lt3);
+		}
+		while (lt1->s != NULL)
+			lt1 = lt1->s;
 	}
 	return lt1;
 }
@@ -263,9 +284,13 @@ float mediana4(int *x, int m, int max, int min, int **h)
 
 float mediana5(int *x, int m, int max, int min, int **h, lt **lt1)
 {
-	int *px, med;
+	int *px, med, i;
+	lt *lt2;
 	*lt1 = ordenar5(x, m, max, min, h, *lt1);
-	med = (m % 2 ? px[m / 2] : (px[m / 2] + px[m / 2 - 1]) / 2);
+	lt2 = *lt1;
+	for (i = 0; i < m / 2; i++)
+		lt2 = lt2->a;
+	med = (m % 2 ? lt2->x : (lt2->x + lt2->s->x) / 2);
 	return med;
 }
 
