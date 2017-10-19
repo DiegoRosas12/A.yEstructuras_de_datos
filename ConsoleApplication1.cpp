@@ -1,7 +1,7 @@
 /// ConsoleApplication1.cpp: define el punto de entrada de la aplicación de consola.
 //
 
-#include "stdafx.h"
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
