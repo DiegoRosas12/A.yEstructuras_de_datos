@@ -85,9 +85,9 @@ int main()
 	time_t t1, t2;
 	srand(time(NULL));
 	printf("Ingrese el maximo: ");
-	scanf_s("%f", &max);
+	scanf("%f", &max);
 	printf("Ingrese el minimo: ");
-	scanf_s("%f", &min);
+	scanf("%f", &min);
 	if (max < min)
 	{
 		max = max + min;
@@ -96,11 +96,11 @@ int main()
 	}
 	do {
 		printf("Numero de datos: ");
-		scanf_s("%d", &m);
+		scanf("%d", &m);
 	} while (m<1);
 	do {
 		printf("Numero de datos en media: ");
-		scanf_s("%d", &n);
+		scanf("%d", &n);
 	} while ((n<1)||(m<n));
 	x = (float*)malloc(m*sizeof(float));
 	mx = x;
