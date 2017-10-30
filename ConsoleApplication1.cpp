@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 /// ConsoleApplication1.cpp: define el punto de entrada de la aplicación de consola.
 //
 
 
+=======
+// ConsoleApplication1.cpp: define el punto de entrada de la aplicaci�n de consola.
+//
+
+>>>>>>> refs/remotes/origin/master
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>

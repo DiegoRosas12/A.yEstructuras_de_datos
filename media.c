@@ -13,6 +13,7 @@ void imprimir(float *x, int m)
         printf("X[%d] = %f\n", i+1, x[i]);
 }
  
+<<<<<<< HEAD
 void imprimir2(float **px, int m)
 {
     int i;
@@ -20,6 +21,8 @@ void imprimir2(float **px, int m)
         printf("X[%d] = %f\n", i+1, *(px[i]));
 }
  
+=======
+>>>>>>> refs/remotes/origin/master
 float media1(float *x, int n)
 {
     int i;
@@ -50,6 +53,7 @@ float media4(float *x, int n, float suma)
     return suma - x[0] + x[n];
 }
  
+<<<<<<< HEAD
 float** ordenar(float *x, int m)
 {
     int i, j;
@@ -82,6 +86,12 @@ int main()
     float min, max, *x, *mx, *aux, *mdx;
     //float **px;
     double tm1, tm2, tm3, tm4, tm5;
+=======
+int main()
+{
+    float min, max, *x, *mx, *aux;
+    double tm1, tm2, tm3, tm4;
+>>>>>>> refs/remotes/origin/master
     int n, m, i;
     time_t t1, t2;
     srand(time(NULL));
@@ -163,6 +173,7 @@ int main()
     printf("mx[%d] = %f\nmx[%d] = %f\nmx[%d] = %f\n", 1, mx[0], (m - n) / 2 + 1, mx[(m - n) / 2], m - n + 1, mx[m - n]);
     printf("Tiempo 4: %lf\n", tm4);
     //imprimir(mx, m-n+1);
+<<<<<<< HEAD
     time(&t1);
     /*
     printf("Original\n");
@@ -189,5 +200,11 @@ int main()
     free(x);
     free(mx);
     free(mdx);
+=======
+    getchar();
+    getchar();
+    free(x);
+    free(mx);
+>>>>>>> refs/remotes/origin/master
     return 0;
 }
