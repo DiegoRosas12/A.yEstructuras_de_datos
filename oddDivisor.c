@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, i,k, t=0, l=0;
+    int a, b, i,k=0, t=0, l=0;
     printf("Ingrese el valor de a: \n");
     scanf("%d",&a);
     printf("Ingrese el valor de b: \n");
@@ -14,14 +14,12 @@ int main() {
         a = b - a;
         b = b - a;
     }
-    //if(a==1)
-      //  t++;
     for(i=a;i<=b;i++){
         for (k=1;k<=b;k++){
          if((i%k)==0)
             t++;   
         }
-        if((!(t%2))==0)
+        if(t%2)
         l++;
         t=0;
     }
