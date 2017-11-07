@@ -14,7 +14,7 @@ int main(int argc, const char * argv[]) {
    
     printf("Ingrese el numero de Pokemon capturados: \n");
     scanf("%d", &N);
-   
+
     printf("\nIngrese el numero de barras de dulce disponibles: \n");
     scanf("%d", &M);
    
@@ -23,27 +23,16 @@ int main(int argc, const char * argv[]) {
    
     printf("\nIngrese el numero de barras de dulce para vender un pokemon: \n");
     scanf("%d", &Y);
-   
-   /* while(!(r>0)){
-        r = M - (X*N);
-        if (r<0){
-        N--;
-        M += Y;
-        }
-if (r==0)
-break;
-    }
-    */
     
-    while(r<0){
+    while(r<=0){
         r = M - (X*N);
+        if(r<0){
         M += Y;
         N--;
+        }
         if(r==0)
           break;
     }
-    
-    //printf("N:%d M:%d X:%d Y:%d",N,M,X,Y);
     printf("\nResultado : %i\n",N);
     return 0;
 }
