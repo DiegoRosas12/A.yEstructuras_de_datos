@@ -2,6 +2,7 @@
 //Esteban Jaime
 //Jose Vilchis
 #include <stdio.h>
+
  
 int main(int argc, const char * argv[]) {
    
@@ -11,7 +12,7 @@ int main(int argc, const char * argv[]) {
     // Y precio de numero de barras de dulce para vender pokemon (Sin evolucionar)
    
     int N=0, M=0, X=0, Y=0, r=0;
-   
+    
     printf("Ingrese el numero de Pokemon capturados: \n");
     scanf("%d", &N);
 
