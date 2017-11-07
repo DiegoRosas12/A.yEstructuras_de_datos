@@ -25,7 +25,7 @@ int main() {
         }
     }
     for(i=1;i<=101;i++) {
-        //Anterior if(hd[i]&&hi[i])
+
         if(hd[i]&&hi[i]){
         hd[i] += hi[i];
         //Modulo no cuenta los pares

@@ -11,7 +11,7 @@ int agregar(lt *nodo, int n){
     if (primero == NULL){
         primero = nodo;
         ultimo = nodo;
-        nodo.v = n;
+        nodo->v = n;
     }else{
         ultimo->s = nodo;
         ultimo = nodo;
