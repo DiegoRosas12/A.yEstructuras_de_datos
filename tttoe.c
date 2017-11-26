@@ -9,8 +9,7 @@ int T[3][3];
 
 
 //Caso Incorrecto
-//Holaaaaa
-//Holaaaaa
+
 
 return 0;
 }
