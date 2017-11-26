@@ -8,7 +8,7 @@
 
 
 //Funcion posibilidad
-int posibilidad(int T) {
+int** posibilidad(int *pT) {
     int i, k, a=0;
     //tenemos que guardar un resultado por renglón y al final sumar los resultados de los renglones
     // para saber quien tiene más posibilidades de ganar
