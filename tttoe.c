@@ -9,7 +9,7 @@
 
 //Funcion posibilidad
 int posibilidad(int T) {
-    int i, a=0;
+    int i, k, a=0;
     //tenemos que guardar un resultado por renglón y al final sumar los resultados de los renglones
     // para saber quien tiene más posibilidades de ganar
     for (i=0;i<3;i++) {
@@ -47,10 +47,7 @@ if (p>2||p<(-2)){
         }
         printf("\n");
     }
-
-//Caso Incorrecto
-
-
+printf("%i",r);
 return 0;
 }
 
