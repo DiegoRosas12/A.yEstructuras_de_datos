@@ -2,6 +2,8 @@
 //Hola
 =======
 #include <stdio.h>
+#include <stdlib.h>
+
 
 //Guardar posiciones
 //Ohhhhhh
