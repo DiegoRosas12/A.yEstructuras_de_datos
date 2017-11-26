@@ -24,9 +24,9 @@ for (i=0;i<3;i++){
 if (p>2||p<(-2)){
     printf("posición incorrecta\n");
 }else if (p==1) {
-    printf("turno de X\n");
-}else if (p==-1) {
     printf("turno de O\n");
+}else if (p==-1) {
+    printf("turno de X\n");
 }else {
     printf("No se sabe quien tira\n");
 }
