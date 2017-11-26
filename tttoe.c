@@ -1,7 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//funcion posibilidad
+//Agregue X
+
+
+//Agregue O
+
+
+//Funcion posibilidad
+
+
 
 int main(){
 int T[3][3];
