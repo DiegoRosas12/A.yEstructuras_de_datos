@@ -8,7 +8,7 @@
 
 
 //Funcion posibilidad
-int posibilidad(int **pT) {
+int posibilidad(int pT[3][3]) {
     int i, k, a=0, *p;
     p = *pT;
     //tenemos que guardar un resultado por renglón y al final sumar los resultados de los renglones
