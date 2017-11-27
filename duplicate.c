@@ -1,7 +1,4 @@
 // Find any duplicate
-
-// Find any duplicate
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
