@@ -5,24 +5,25 @@
  
  
 int main(){
-    int n, i, *N, *NX, *H;
+    int n, n2, i=0, *N, *H;
    
     srand((unsigned int)time(NULL));
+//Creacion del vector
     printf("Ingrese el valor N\n");
     scanf("%d", &n);
     N = (int*)malloc((n+1)*sizeof(int));
     H = (int*)calloc(n, sizeof(int));
 
-    NX = N;
-
-    while((NX-N)<(n+1)){
-        *NX = ((n-1)*rand())/RAND_MAX+1;
-        NX++;
+//Ingreso de valores
+    while(i<(n+1)){
+        printf("Ingrese un numero: \n");
+        scanf("%d", &N[i])
+        H[N[i]-1]++;
+        i++;
     }
    
 //Histograma
-    for(i = 0; i < (n+1); i++)
-        H[N[i]-1]++;
+
 //Buscando la mayor repeticion
     for(i=0; i<(n+1); i++){
         if(H[i]>1){
