@@ -23,7 +23,7 @@ int** sort(int *p, int n){
 }
 
 int main() {
-    int i,n, *p, **px;
+    int i,n, *p, **px, t, r=0;
     printf("Numero de elementos: ");
     scanf("%i",&n);
     int a[n];
@@ -31,12 +31,12 @@ int main() {
         scanf("%i",&a[i]);
     p = a;
     px = sort(p,n);
-    for(i=0;i<n-1;i++)
-        a[i] = (*px[i+1] - *px[i]);
-    a[n] = 0; 
-    p = a;
-    px = sort(p,n);
-    printf("%i\n",**(px+(n-2)));
+    for(i=0;i<n-1;i++){
+        t = (*px[i+1] - *px[i]);
+        if (t>r)
+            r = t;
+    }
+    printf("%i\n",r);
     free(px);
     return 0;
 }
