@@ -16,8 +16,11 @@ int main(){
 
 //Ingreso de valores
     while(i<(n+1)){
-        printf("Ingrese un numero: \n");
-        scanf("%d", &N[i]);
+        do{
+        printf("Ingrese un numero para N[%d]\n", i+1);
+        scanf("%d", &n2);
+    }while(n2<1 || n2>n);
+    N[i] = n2; 
         H[N[i]-1]++;
         i++;
     }
@@ -38,7 +41,7 @@ int main(){
     }
  
     printf("\nH (Histograma)\n");
-    for(i=0; i<(n+1); i++){
+    for(i=0; i<n; i++){
         printf("%d ", H[i]);
     }
    
