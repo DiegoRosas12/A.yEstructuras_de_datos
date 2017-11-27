@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
- 
- 
+
 int main(){
     int n, n2, i=0, *N, *H;
    
@@ -25,8 +24,6 @@ int main(){
         i++;
     }
    
-//Histograma
-
 //Buscando la mayor repeticion
     for(i=0; i<(n+1); i++){
         if(H[i]>1){
