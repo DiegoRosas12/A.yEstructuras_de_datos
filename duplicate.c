@@ -31,7 +31,8 @@ int main(){
         break;
         }  
     }
- 
+ //Los puse en comentario Vilchis para que se parezca a la salida del programa
+ /*
    printf("N: %d\n", n);
     for(i=0; i<(n+1); i++){
         printf("%d ", N[i]);
@@ -41,7 +42,7 @@ int main(){
     for(i=0; i<n; i++){
         printf("%d ", H[i]);
     }
-   
+   */
     free(H);
     free(N);
     return 0;
