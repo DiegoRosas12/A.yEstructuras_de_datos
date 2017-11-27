@@ -35,8 +35,12 @@ int main() {
     for(i=0;i<n;i++)
     printf("%i\n",**(px+i));
     for(i=0;i<n-1;i++)
-        
-
+        a[i] = (*px[i+1] - *px[i]);
+    a[n] = 0;
+    printf("\n");  
+    p = a;
+    px = sort(p,n);
+    printf("resultado: %i\n",**(px+(n-1)));
     free(px);
     return 0;
 }
