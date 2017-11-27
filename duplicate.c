@@ -6,7 +6,7 @@
 
 int* ordenar(int *N, int n, int **H){
     int i, j;
-    int *ON, *aux, *H1;
+    int *ON, *H1;
     H1 = *H;
     ON = (int*)malloc((n+1)*sizeof(int));
 
