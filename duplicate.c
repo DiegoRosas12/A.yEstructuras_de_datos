@@ -15,7 +15,7 @@ int* ordenar(int *N, int n, int **H){
     for(i = 0; i < (n+1); i++)
         H1[N[i] - 1]++;
     
-    j = max - 1;
+    j = n - 1;
     for(i = 0; i <(n+1);)
     {
         while(H1[j])
