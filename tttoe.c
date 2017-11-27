@@ -9,8 +9,7 @@
 
 //Funcion posibilidad
 int posibilidad(int **pT) {
-    int i, k, a=0, *p;
-    p = *pT;
+    int i, k;
     //tenemos que guardar un resultado por renglón y al final sumar los resultados de los renglones
     // para saber quien tiene más posibilidades de ganar 
     for (i=0;i<3;i++) {
@@ -19,10 +18,17 @@ int posibilidad(int **pT) {
     return 0;
 }
 
+void imprimir(int **ppT) {
+    int i, j;
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++)
+        printf("%i",*(*ppT+i)+j);
+    }
+}
 
 int main(){
 int T[3][3];
-int i=0, k=0, p=0, r;
+int i=0, k=0, p=0, r,*pT, **ppT;
 //Guardar posiciones
 for (i=0;i<3;i++){
     for(k=0;k<3;k++){
@@ -48,6 +54,13 @@ if (p>2||p<(-2)){
         }
         printf("\n");
     }
+pT = (int*)malloc(sizeof(int)*3);
+ppT = (int**)malloc(sizeof(int*)*3);
+for(i=0;i<3;i++){
+    for(k=0;k<3;k++)
+    //ppT
+} 
+
 printf("%i",r);
 return 0;
 }
