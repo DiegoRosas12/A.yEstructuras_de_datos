@@ -6,9 +6,9 @@
 int main(){
 int n, *N;
 
-N = (int*)malloc(int*sizeof(int));
-
 printf("Ingrese el valor N\n");
+scanf("%d", &n);
+N = (int*)malloc((n+1)*sizeof(int));
 
 
 
