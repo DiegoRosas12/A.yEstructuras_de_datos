@@ -19,7 +19,6 @@ int** sort(int *p, int n){
           }
           px[j+1] = aux; 
      }
-    
 	return px;
 }
 
@@ -35,6 +34,9 @@ int main() {
     printf("\n");
     for(i=0;i<n;i++)
     printf("%i\n",**(px+i));
+    for(i=0;i<n-1;i++)
+        
+
     free(px);
     return 0;
 }
