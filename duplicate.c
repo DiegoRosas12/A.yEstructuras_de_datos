@@ -5,7 +5,7 @@
 
 
 int main(){
-    int n, i, j, *N, *NX, *H;
+    int n, i, j, aux=0, aux2=0, *N, *NX, *H;
     
     srand((unsigned int)time(NULL));
     printf("Ingrese el valor N\n");
@@ -24,14 +24,22 @@ int main(){
 //Histograma
     for(i = 0; i < (n+1); i++)
         H[N[i]-1]++;
-    
-   /*printf("N (Desordenado)\n");
+//Buscando la mayor repeticion
+    for(i=0; i<(n+1); i++){
+        if(aux<H[i]){
+            aux = H[i];
+            aux2 = i+1; 
+        }  
+    }
+
+    printf("N (Desordenado)\n");
     for(i=0; i<(n+1); i++){
         printf("%d ", N[i]);
-    } */
+    }
+    printf("\nEl numero que mas se repite es: %d\n", aux2);
 
     printf("H (Histograma)\n");
-    for(i=0; i<n; i++){
+    for(i=0; i<(n+1); i++){
         printf("%d ", H[i]);
     }
     
