@@ -1,10 +1,9 @@
 // Find any duplicate
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 int main(){
-    int n, n2, i=0, *N, *H;
+    int n, n2, i, *N, *H;
    
     srand((unsigned int)time(NULL));
 //Creacion del vector
