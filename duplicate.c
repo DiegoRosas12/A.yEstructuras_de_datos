@@ -12,12 +12,12 @@ int main(){
     printf("Ingrese el valor N\n");
     scanf("%d", &n);
     N = (int*)malloc((n+1)*sizeof(int));
-    H = (int*)calloc(n, sizeof(int));
+    H = (int*)calloc((n-1), sizeof(int));
 
 //Ingreso de valores
     while(i<(n+1)){
         printf("Ingrese un numero: \n");
-        scanf("%d", &N[i])
+        scanf("%d", &N[i]);
         H[N[i]-1]++;
         i++;
     }
