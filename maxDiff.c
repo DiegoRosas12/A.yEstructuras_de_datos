@@ -1,4 +1,6 @@
-//Max Difference
+//Diego Eduardo Rosas Gonzalez
+//Esteban Daniel Jaime Rosales 
+//Jose Abel Vilchis Mar
 #include <stdio.h>
 #include <stdlib.h>
 
