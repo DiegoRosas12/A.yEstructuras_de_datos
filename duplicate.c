@@ -7,10 +7,10 @@
 int* ordenar(int *N, int n, int **H){
     int i, j;
     int *ON, *aux, *H1;
-    H1 = *H
+    H1 = *H;
     ON = (int*)malloc((n+1)*sizeof(int));
 
-    H1 == (int*)calloc(n, sizeof(int));
+    H1 = (int*)calloc(n, sizeof(int));
 
     for(i = 0; i < (n+1); i++)
         H1[N[i] - 1]++;
