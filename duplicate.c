@@ -47,7 +47,7 @@ while(NX-N<(n+1)){
 H = NULL;
 aux = N;
 while(aux - N < (n+1)){
-    NX[aux - N] = ordenar(aux, n, &H)
+    NX[aux - N] = ordenar(aux, n, &H);
     aux++;
 }
 
@@ -61,11 +61,10 @@ for(i=0; i<(n+1); i++){
     printf("%d ", NX[i]);
 }
 
-printf("H (Histograma)\n", n);
+printf("H (Histograma)\n");
 for(i=0; i<n; i++){
     printf("%d ", H[i]);
 }
-
 
 free(H);
 free(N);
