@@ -26,7 +26,7 @@ int** sort(int *p, int n){
 
 int main() {
     int i,n, *p, **px, t, r=0;
-    printf("Numero de elementos: ");
+    //printf("Numero de elementos: ");
     scanf("%i",&n);
     int a[n];
     for(i=0;i<n;i++)
