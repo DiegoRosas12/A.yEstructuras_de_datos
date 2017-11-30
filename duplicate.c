@@ -6,8 +6,7 @@
 
 int main(){
     int n, n2, i, *N, *H;
-   
-    srand((unsigned int)time(NULL));
+    
 //Creacion del vector
     printf("Ingrese el valor N\n");
     scanf("%d", &n);
