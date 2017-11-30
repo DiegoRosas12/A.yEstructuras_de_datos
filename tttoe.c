@@ -13,7 +13,8 @@
 //Funcion posibilidad
 void posibilidad(int T[0][3]){
     int p=0, i;
-    for(i=0;i<3;i++)
+    //for(i=0;i<3;i++)
+    
 
 }
 
