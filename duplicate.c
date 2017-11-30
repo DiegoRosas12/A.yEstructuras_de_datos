@@ -1,49 +1,38 @@
 //Diego Eduardo Rosas Gonzalez
 //Esteban Daniel Jaime Rosales 
 //Jose Abel Vilchis Mar
+
+// Find any duplicate
 #include <stdio.h>
 #include <stdlib.h>
 
 int main(){
-    int n, n2, i, *N, *H;
-    
-//Creacion del vector
-    printf("Ingrese el valor N\n");
+    int n, aux, i=0, j, *N;
+    //Creacion del vector
     scanf("%d", &n);
+    printf("\n");
     N = (int*)malloc((n+1)*sizeof(int));
-    H = (int*)calloc((n-1), sizeof(int));
-
-//Ingreso de valores
+    //Ingreso de valores
     while(i<(n+1)){
         do{
-        printf("Ingrese un numero para N[%d]\n", i+1);
-        scanf("%d", &n2);
-    }while(n2<1 || n2>n);
-    N[i] = n2; 
-        H[N[i]-1]++;
+            scanf("%d", &aux);
+        }while(aux<1 || aux>n);
+        *(N+i) = aux;
         i++;
     }
-   
-//Buscando la mayor repeticion
-    for(i=0; i<(n+1); i++){
-        if(H[i]>1){
-        printf("\nEl numero que mas se repite es: %d\n", i+1);
-        break;
-        }  
-    }
- //Los puse en comentario Vilchis para que se parezca a la salida del programa
- /*
-   printf("N: %d\n", n);
-    for(i=0; i<(n+1); i++){
-        printf("%d ", N[i]);
-    }
- 
-    printf("\nH (Histograma)\n");
+    //Buscando la mayor repeticion
+    aux=0;
     for(i=0; i<n; i++){
-        printf("%d ", H[i]);
+        aux = *(N+i);
+        for(j=i+1; j<(n+1); j++){
+            if(*(N+j) == aux){
+            printf("\n\n%d\n", aux);
+            free(N);
+            return 0;
+            }
+        }
     }
-   */
-    free(H);
     free(N);
     return 0;
 }
+
